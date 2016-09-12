@@ -23,3 +23,7 @@ rm ssocr-2.16.3.tar.bz2
 wait $!
 rm -rf ssocr-2.16.3
 wait$!
+
+sudo npm install
+wait $!
+node server/install-test.js

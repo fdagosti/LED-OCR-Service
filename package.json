@@ -16,7 +16,7 @@
   "config": {
     "watcher": {
       "index": 2,
-      "debug": true
+      "debug": false
     }
   }
 }
