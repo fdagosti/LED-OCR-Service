@@ -1,0 +1,22 @@
+{
+  "name": "LED-OCR-service",
+  "version": "1.0.0",
+  "description": "recognize numbers from a 7 segments led display",
+  "private": true,
+  "main": "server/watcher-test.js",
+  "scripts": {
+    "start": "node server/watcher-test.js"
+  },
+  "author": "Francois D'Agostini <francois.dagostini@gmail.com>",
+  "dependencies": {
+    "numbers": "^0.6.0",
+    "opencv": "^5.0.0",
+    "underscore": "^1.8.3"
+  },
+  "config": {
+    "watcher": {
+      "index": 2,
+      "debug": true
+    }
+  }
+}
