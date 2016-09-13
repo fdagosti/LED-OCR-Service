@@ -1,0 +1,31 @@
+<div class="container  page-header" style="margin-top:60px;">
+
+  <div class="row well well-lg">
+    <div class="col-md-12">
+    <div role="alert" ng-show="vm.error" class="alert alert-danger">{{vm.error}}</div>
+      <h2 class="text-center">LED-OCR</h2>
+
+        <p class="lead">recognize images in 7 segments led displays
+        </p>
+
+      
+        
+          <button ng-click="vm.status()" class="btn title-button hero-btn btn-lg btn-primary">get Status</button>
+          <button ng-click="vm.check()" class="btn title-button hero-btn btn-lg btn-primary">Check</button>
+            
+    </div>
+  </div>
+  <div class="row">
+
+    <div class="col-md-6 col-xs-12">
+
+      <div role="alert"  class="alert alert-info">Hello, this is the panel that will display the current status</div>
+      
+    </div>
+    <div class="col-md-6 col-xs-12">
+
+      <div role="alert" ng-show="vm.error" class="alert alert-danger">{{vm.error}}</div>
+      
+    </div>
+  </div>
+</div>

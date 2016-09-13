@@ -1,0 +1,44 @@
+
+<!-- public/index.html -->
+<!doctype html>
+<html ng-app="led-ocr" lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, user-scalable=no">
+        <meta charset="UTF-8">
+        <base href="/">
+
+        <title>W8Less</title>
+
+        
+        <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.css">
+        <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="libs/bootstrap/dist/css/bootstrap-theme.min.css">
+
+        
+        
+        <script src="libs/angular/angular.js"></script>
+        <script src="libs/jquery/dist/jquery.min.js"></script>
+        <script src="libs/angular-route/angular-route.js"></script>
+
+        <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+        
+        
+        <script src="libs/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="libs/angular-socket-io/socket.js"></script>
+        
+        <script src="src/app/ngapp.js"></script>
+        <script src="src/app/landing/landing.controller.js"></script>
+        <script src="src/app/common/directives/nav/navigation.directive.js"></script>
+        <script src="src/app/common/directives/nav/navigation.controller.js"></script>
+        <script src="src/app/common/directives/footer/footer.directive.js"></script>
+
+        <script src="src/app/common/services/ocr.service.js"></script>
+        
+    </head>
+    <body>
+    <navigation></navigation>
+    
+    <div class="page" ng-view>   </div>
+    <appfooter></appfooter>
+    </body>
+</html>

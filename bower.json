@@ -1,0 +1,29 @@
+{
+  "name": "led-ocr-service",
+  "description": "Queue Ticket System for people who do not like to wait",
+  "main": "index.html",
+  "authors": [
+    "Francois D'Agostini <francois.dagostini@gmail.com>",
+    "Mathieu Gorbinet <gorbi@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/fdagosti/w8less",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "angular": "^1.5.2",
+    "font-awesome": "^4.5.0",
+    "angular-route": "^1.5.2"
+  },
+  "resolutions": {
+    "angular": ">=1.2.x"
+  }
+}
