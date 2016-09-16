@@ -1,3 +1,5 @@
+var dotenv = require("dotenv").load();
+
 var express = require('express');
 var path = require('path');
 var logger = require('morgan');

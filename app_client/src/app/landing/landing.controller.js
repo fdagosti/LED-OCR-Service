@@ -19,6 +19,7 @@ angular.module('led-ocr').controller('landingCtrl', function($scope, ocr) {
   .then(function(response){
     console.log("check answer");
     console.log(response.data);
+    vm.number = response.data;
   }, function(err){
     console.log("ERROR ");
     console.log(err.data);

@@ -3,24 +3,20 @@
   "version": "1.0.0",
   "description": "recognize numbers from a 7 segments led display",
   "private": true,
-  "main": "server/watcher-test.js",
   "scripts": {
-    "start": "node server/watcher-test.js"
+    "start": "node app.js"
   },
   "author": "Francois D'Agostini <francois.dagostini@gmail.com>",
   "dependencies": {
+    "aws-sdk": "^2.6.3",
     "body-parser": "^1.15.2",
+    "dotenv": "^2.0.0",
     "express": "^4.14.0",
     "jade": "^1.11.0",
     "morgan": "^1.7.0",
-    "numbers": "^0.6.0",
-    "opencv": "^5.0.0",
-    "underscore": "^1.8.3"
+    "opencv": "^5.0.0"
   },
-  "config": {
-    "watcher": {
-      "index": 2,
-      "debug": false
-    }
+  "devDependencies": {
+    "nodemon": "^1.10.2"
   }
 }
