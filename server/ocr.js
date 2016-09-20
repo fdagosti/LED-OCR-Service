@@ -33,6 +33,9 @@ module.exports.checkCameraImage = function(cb){
           cb(err, null);
           return;
         }
+        var original_path = path.join(__dirname, 'img', 'led_original.png');
+        console.log("original_path = "+original_path);
+        im.save(original_path);
 
         var processedImage = im.roi(ROI.x, ROI.y, ROI.width, ROI.height);
         processedImage.convertGrayscale();
@@ -40,6 +43,9 @@ module.exports.checkCameraImage = function(cb){
 
          var output_path = path.join(__dirname, 'img', 'led_output.png');
         processedImage.save(output_path);
+
+        console.log("DIRNNAEM");
+        console.log(__dirname);
 
         var cmd = "ssocr -d -1 crop 4 4 " + (ROI.width - 3) + " " + (ROI.height - 3) + " " + output_path;
 

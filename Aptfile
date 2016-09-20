@@ -1,0 +1,15 @@
+build-essential
+vim
+xorg
+libopencv-dev
+libimlib2=1.4.6
+libimlib2-dev
+libpng-dev
+libjpeg-turbo8-dev
+libbz2-dev
+libfreetype6-dev
+libjpeg-dev
+libtiff-dev
+libx11-dev
+libxext-dev
+zlib1g-dev

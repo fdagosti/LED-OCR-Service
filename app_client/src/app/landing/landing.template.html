@@ -7,19 +7,40 @@
 
         <p class="lead">recognize images in 7 segments led displays
         </p>
-
-      
-        
-          <button ng-click="vm.status()" class="btn title-button hero-btn btn-lg btn-primary">get Status</button>
           <button ng-click="vm.check()" class="btn title-button hero-btn btn-lg btn-primary">Check</button>
             
     </div>
   </div>
   <div class="row">
 
-    <div class="col-md-6 col-xs-12">
+    <div class="col-md-8 col-xs-12">
 
-      <div role="alert"  class="alert alert-info">Number of the camera: {{vm.number}}</div>
+      <div class="panel panel-info">
+      <div class="panel-heading">
+          <h3>Number of the camera: {{vm.number}}</h3>
+        
+      </div>
+        <div class="panel-body">
+          
+ <div class="row">
+ <div class="col-xs-6">
+   
+          <figure>
+            <img width="256" ng-src="{{vm.imgorig}}" alt="">
+            <figcaption>Raw Camera image</figcaption>
+          </figure>
+ </div>
+ <div class="col-xs-6">
+          <figure>
+            <img width="256" ng-src="{{vm.imgsrc}}" alt="">
+            <figcaption>analyzed number</figcaption>
+          </figure>
+   
+ </div>
+ </div>
+
+        </div>
+      </div>
       
     </div>
     <div class="col-md-6 col-xs-12">
